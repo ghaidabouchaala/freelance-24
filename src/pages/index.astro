@@ -1,0 +1,121 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <!-- Hero Section -->
+      <section class="hero min-h-[80vh] bg-base-200">
+        <div class="hero-content text-center">
+          <div class="max-w-3xl">
+            <h1 class="text-5xl font-bold">Get Your Work Done in 24 Hours</h1>
+            <p class="py-6 text-xl">Connect with skilled freelancers who deliver quality work within 24 hours. Perfect for quick tasks and urgent projects.</p>
+            <a href="#join" class="btn btn-primary btn-lg">Start Your Project</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- How it Works -->
+      <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+          <h2 class="text-4xl font-bold text-center mb-12">How It Works</h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="card bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h3 class="card-title">1. Post Your Task</h3>
+                <p>Describe what you need done and set your budget. All tasks must be deliverable within 24 hours.</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h3 class="card-title">2. Get Matched</h3>
+                <p>We'll connect you with pre-vetted freelancers who can deliver quality work within your timeframe.</p>
+              </div>
+            </div>
+            <div class="card bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h3 class="card-title">3. Get It Done</h3>
+                <p>Your freelancer delivers the work within 24 hours. Only pay when you're 100% satisfied.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Freelance24 -->
+      <section class="py-20 bg-base-200">
+        <div class="max-w-7xl mx-auto px-4">
+          <h2 class="text-4xl font-bold text-center mb-12">Why Freelance24?</h2>
+          <div class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-6">
+              <div class="flex gap-4">
+                <div class="flex-none">
+                  <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-content">
+                    ✓
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold">24-Hour Delivery</h3>
+                  <p>Get your work delivered within 24 hours, guaranteed.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="flex-none">
+                  <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-content">
+                    ✓
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold">Vetted Freelancers</h3>
+                  <p>Work with pre-screened professionals who deliver quality.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="flex-none">
+                  <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-content">
+                    ✓
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold">Money-Back Guarantee</h3>
+                  <p>Not satisfied? Get your money back, no questions asked.</p>
+                </div>
+              </div>
+            </div>
+            <div class="relative">
+              <img 
+                src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" 
+                alt="Team working together" 
+                class="rounded-lg shadow-xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Join Section -->
+      <section id="join" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="text-center max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold mb-6">Ready to Get Started?</h2>
+            <p class="text-xl mb-8">Join thousands of clients and freelancers already using Freelance24.</p>
+            <div class="flex gap-4 justify-center">
+              <a href="/client-signup" class="btn btn-primary btn-lg">Hire a Freelancer</a>
+              <a href="/freelancer-signup" class="btn btn-outline btn-lg">Become a Freelancer</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
